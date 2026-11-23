@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "*/10 * * * *"   # каждые 10 минут (GitHub может задерживать запуск на несколько минут)
   workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
+  push:
+    branches: [main]
+    paths-ignore: [state.json]
 
 permissions:
   contents: write
