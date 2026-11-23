@@ -35,5 +35,6 @@ jobs:
         run: |
           git config user.name "watcher-bot"
           git config user.email "watcher-bot@users.noreply.github.com"
+          [ -f state.json ] || exit 0
           git add state.json
           git diff --cached --quiet || (git commit -m "update state" && git push)
