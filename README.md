@@ -22,3 +22,5 @@ python watcher.py --dry
 3. Actions → watch-freelancehunt → **Run workflow** — первый запуск пришлёт «✅ Слежу за Freelancehunt».
 
 Токен лежит только в секретах GitHub, в коде его нет.
+
+Уведомления приходят от бота @snovvy_jobs_bot.
